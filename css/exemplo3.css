@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f172a;
+}
+
+/* Animação*/
+@keyframes pular{
+    from {transform: translateY(0);}
+    to {transform: translateY(-80px);}
+}
+
+.bolinha{
+    width: 20px;
+    height: 20px;
+    background: linear-gradient( #7dffc9, #00cc8f 60%);
+    border-radius: 50%;
+
+    animation: pular 1s cubic-bezier(.4,0,.6,1) infinite alternate;
+                    /* curva natural             sempre vai e volta*/
+}

@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f172a;
+}
+
+.botao{
+    padding: 14px 30px;
+    border: none;
+    border-radius: 999px; /* Formato pilula  */
+    background-color: #00cc8f;
+    color: #05130d;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+
+/* LINHA MAGICA EXEMPLO: 
+diga quais propriedades transcionam, tempo e a curva
+*/
+transition: transform 0.3s ease, /*movimento suave */
+            box-shadow 0.3s ease; /*brilho acompanhando*/
+}
+
+.botao:hover{
+    transform: translateY(-4px); /*negativo =sobe 4 pixels */
+    box-shadow: 0 10px 22px rgba(0, 204, 143, 0.45);
+}
